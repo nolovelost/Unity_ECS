@@ -20,6 +20,11 @@ public class JobManager : MonoBehaviour
     public int carIncremementAmount = 10;
     public float movementSpeed = 5.0f;
 
+    void Awake()
+    {
+        transforms = new TransformAccessArray();
+    }
+
     void Update()
     {
         carJobHandle.Complete();
