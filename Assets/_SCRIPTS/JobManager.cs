@@ -20,9 +20,20 @@ public class JobManager : MonoBehaviour
     public int carIncremementAmount = 10;
     public float movementSpeed = 5.0f;
 
-    void Awake()
+    private void OnDisable()
     {
-        transforms = new TransformAccessArray();
+        carJobHandle.Complete();
+        transforms.Dispose();
+    }
+
+    void Start()
+    {
+        transforms = new TransformAccessArray(0, -1);
+
+        leftBound = Camera.main.ScreenToWorldPoint(new Vector3(0.0f, 0.0f, depth)).x;
+        rightBound = Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.pixelWidth, 0.0f, depth)).x;
+        lowerBound = Camera.main.ScreenToWorldPoint(new Vector3(0.0f, 0.0f, depth)).y;
+        upperBound = Camera.main.ScreenToWorldPoint(new Vector3(0.0f, Camera.main.pixelHeight, depth)).y;
     }
 
     void Update()

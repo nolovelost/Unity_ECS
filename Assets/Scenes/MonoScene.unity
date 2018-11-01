@@ -265,7 +265,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1553674071}
   - component: {fileID: 1553674070}
-  - component: {fileID: 1553674072}
   m_Layer: 0
   m_Name: SceneMaster
   m_TagString: Untagged
@@ -290,7 +289,7 @@ MonoBehaviour:
   upperBound: 0
   lowerBound: 0
   depth: 100
-  carIncremementAmount: 10
+  carIncremementAmount: 10000
   movementSpeed: 5
 --- !u!4 &1553674071
 Transform:
@@ -305,22 +304,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1553674072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1553674069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: caacb03353303984593c1840effca4c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carPrefab: {fileID: 1129416378100006, guid: 791650a3b8ef0d24da271fae43c906b5, type: 2}
-  leftBound: 0
-  rightBound: 0
-  upperBound: 0
-  lowerBound: 0
-  depth: 100
-  carIncremementAmount: 10
-  movementSpeed: 5
