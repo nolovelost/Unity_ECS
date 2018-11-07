@@ -11,7 +11,12 @@ ModelImporter:
     2300000: Vehicle_0_Vehicles
     3300000: Vehicle_0_Vehicles
     4300000: Vehicle_0_Vehicles
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vehicle_0_VehiclesMat
+    second: {fileID: 2100000, guid: e784df77e3fe64e43b0643c0271ae1f8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
