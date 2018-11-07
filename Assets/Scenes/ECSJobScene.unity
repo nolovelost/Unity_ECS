@@ -220,13 +220,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instance: {fileID: 0}
-  carPrefab: {fileID: 0}
+  carPrefab: {fileID: 1129416378100006, guid: 4306c3908750ce448ab1d2fccb25ae68, type: 2}
   leftBound: 0
   rightBound: 0
   upperBound: 0
   lowerBound: 0
   depth: 100
-  carIncremementAmount: 1000
+  carIncremementAmount: 10000
   movementSpeed: 5
   currentCarAmount: 0
 --- !u!1 &1881478695
